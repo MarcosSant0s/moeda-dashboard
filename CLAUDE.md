@@ -27,4 +27,16 @@ The app imports `requests`, `pandas`, and `streamlit`. There is no requirements/
 
 ## GitHub sync
 
-This project is pushed to `https://github.com/MarcosSant0s/moeda-dashboard` (public). After finishing any task that changes files in this repo, commit the changes with a descriptive message and push to `origin main` so the GitHub repo stays in sync — do this automatically, without asking for confirmation each time.
+This project is pushed to `https://github.com/MarcosSant0s/moeda-dashboard` (public, remote `origin`, branch `main`).
+
+**After every change you make to tracked files in this repo — no matter how small — commit and push automatically, without asking for confirmation:**
+
+```
+git add -A
+git commit -m "<descriptive message of what changed and why>"
+git push origin main
+```
+
+- Do this as the last step of each task, right after the change is verified working.
+- Write commit messages that describe the actual change (e.g. "Add EUR/BTC min-max metrics to sidebar"), not generic messages like "update".
+- Respect `.gitignore` (e.g. `streamlit.log`, `.claude/`, `__pycache__/`) — don't force-add ignored files.
